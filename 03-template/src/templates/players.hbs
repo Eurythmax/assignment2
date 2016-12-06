@@ -1,0 +1,15 @@
+onst players = {
+	'magnus':{
+		name:'Magnus Carlsen'
+		image:'https://www.g-star.com/Images/151M-Collaboration-Magnus-HEADER_852.jpg'
+		description:'Lorem Ipsum Bla Bla BLa'
+	}
+	'nelson':{
+		name:'Nelson Horatio'
+		image:'https://upload.wikimedia.org/wikipedia/commons/7/72/HoratioNelson1.jpg'
+		description:'Lorem Ipsum Bla Bla BLa'
+	}
+}
+
+const player = players[ctx.params.player];
+$app.html(playerTpl(player));
